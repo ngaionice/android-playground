@@ -11,8 +11,8 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import dev.ionice.playground.common.PGTabRow
-import dev.ionice.playground.common.PGTopAppBar
+import dev.ionice.playground.base.PGTabRow
+import dev.ionice.playground.base.PGTopAppBar
 import dev.ionice.playground.geolocation.LocationTab
 import dev.ionice.playground.images.SquareImageCard
 import dev.ionice.playground.images.unsplash.UnsplashApi

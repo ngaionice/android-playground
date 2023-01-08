@@ -1,4 +1,4 @@
-package dev.ionice.playground.common
+package dev.ionice.playground.base
 
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api

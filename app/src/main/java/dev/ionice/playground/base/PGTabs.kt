@@ -1,4 +1,4 @@
-package dev.ionice.playground.common
+package dev.ionice.playground.base
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AccountBox
