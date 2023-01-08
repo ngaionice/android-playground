@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import dev.ionice.playground.common.PGTabRow
 import dev.ionice.playground.common.PGTopAppBar
+import dev.ionice.playground.geolocation.LocationTab
 import dev.ionice.playground.images.SquareImageCard
 import dev.ionice.playground.images.unsplash.UnsplashApi
 import dev.ionice.playground.ui.theme.PlaygroundTheme
@@ -48,6 +49,7 @@ private fun MainScreen() {
             Box(Modifier.padding(16.dp)) {
                 when (state) {
                     0 -> SquareImageCard(displayText = "Hoenn") {}
+                    1 -> LocationTab()
                 }
             }
         }
