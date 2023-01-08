@@ -24,6 +24,7 @@ android {
         buildTypes.forEach {
             it.buildConfigField 'String', 'uska', uska
             it.buildConfigField 'String', 'usks', usks
+            it.buildConfigField 'String', 'gaka', gaka
         }
         release {
             minifyEnabled false

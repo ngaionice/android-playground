@@ -9,6 +9,7 @@ import androidx.compose.ui.Modifier
 @Composable
 fun LocationTab() {
     var location by remember { mutableStateOf<Coordinates?>(null) }
+    var name by remember { mutableStateOf("") }
     Column(
         modifier = Modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -21,5 +22,10 @@ fun LocationTab() {
                 Text(text = "Longitude: ${location!!.lon}")
             }
         }
+        Text(text = name)
+    }
+
+    LaunchedEffect(key1 = location) {
+        name = location?.let { getCityName(it) } ?: ""
     }
 }
