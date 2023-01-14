@@ -7,8 +7,8 @@ import androidx.compose.runtime.Composable
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun PGTopAppBar() {
+fun PGTopAppBar(action: @Composable () -> Unit) {
     CenterAlignedTopAppBar(title = {
         Text(text = "Playground")
-    })
+    }, actions = { action() })
 }

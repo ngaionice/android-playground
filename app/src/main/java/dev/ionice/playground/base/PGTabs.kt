@@ -1,15 +1,18 @@
 package dev.ionice.playground.base
 
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.AccountBox
-import androidx.compose.material.icons.filled.Place
+import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.Icon
 import androidx.compose.material3.LeadingIconTab
 import androidx.compose.material3.TabRow
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 
-val TABS = listOf(Pair("Coil", Icons.Default.AccountBox), Pair("Location", Icons.Default.Place))
+val TABS = listOf(
+    Pair("Coil", Icons.Default.Photo),
+    Pair("Location", Icons.Default.Map),
+    Pair("Sorting", Icons.Default.Filter)
+)
 
 @Composable
 fun PGTabRow(selectedIndex: Int, setSelectedIndex: (Int) -> Unit) {
